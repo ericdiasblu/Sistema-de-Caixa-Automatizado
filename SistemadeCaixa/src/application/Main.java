@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		
+		// Scanner para captura das variáveis
 		Scanner sc = new Scanner (System.in);
-		
+
+		// Variáveis utilizadas
 		int selecionarProduto, valorTotal = 0;
-		int arroz = 20, feijao = 10, acucar = 5, cafe = 15;
-		boolean continuar = false;
-		
-		
-		while (continuar == false) {
-			
+		boolean continuarCompra = false;
+
+		// Laço para continuar adicionando produtos
+		while (continuarCompra == false) {
+			// Design do menu dos produtos
 			System.out.println("\n Sistema de Caixa Automatizado");
 			
 			System.out.println(" ┌―――――――――――――――――――――――――――┐");
@@ -24,28 +24,30 @@ public class Main {
 			System.out.println(" │   4. Café - R$ 15.00      │");
 			System.out.println(" │   5. Sair                 │");
 			System.out.println(" └―――――――――――――――――――――――――――┘");
+			// Selecionar produto do sistema
 			System.out.print(" Selecione a opcão: ");
 			selecionarProduto = sc.nextInt();
-			
+
+			// Opções do mercado
 			switch (selecionarProduto) {
 			case 1:
 				System.out.println(" Arroz - R$20.00\n");
-				valorTotal += arroz;
+				valorTotal += 20;
 				break;
 				
 			case 2:
 				System.out.println(" Feijão - R$10.00\n");
-				valorTotal += feijao;
+				valorTotal += 10;
 				break;
 				
 			case 3:
 				System.out.println(" Açucar - R$5.00\n");
-				valorTotal += acucar;
+				valorTotal += 5;
 				break;
 				
 			case 4:
 				System.out.println(" Café - R$15.00\n");
-				valorTotal += cafe;
+				valorTotal += 15;
 				break;
 				
 			case 5:
@@ -56,7 +58,7 @@ public class Main {
 				break;
 			}		
 		}
-		
+		// Valor total dos itens selecionados
 		System.out.println(" Total a pagar: R$"+valorTotal+".00");
 		
 		sc.close();
