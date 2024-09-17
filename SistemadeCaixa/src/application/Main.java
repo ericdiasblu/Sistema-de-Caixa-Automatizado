@@ -62,6 +62,5 @@ public class Main {
 		System.out.println(" Total a pagar: R$"+valorTotal+".00");
 		
 		sc.close();
-
 	}
 }
