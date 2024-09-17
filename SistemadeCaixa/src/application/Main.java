@@ -51,7 +51,7 @@ public class Main {
 				break;
 				
 			case 5:
-				continuar = true;
+				continuarCompra = true;
 				break;
 
 			default:
